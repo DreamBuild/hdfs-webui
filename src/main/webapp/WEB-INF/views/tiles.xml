@@ -4,5 +4,17 @@
   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-	<definition name="index" template="/WEB-INF/views/index.jsp"></definition>
+	<definition name="explorer"
+		template="/WEB-INF/views/pages/templates/explorer-template.jsp">
+		<put-attribute name="title" value="文件浏览"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/pages/contents/explorer-content.jsp"></put-attribute>
+		<put-list-attribute name="headers">
+			<add-attribute value="common-header" />
+			<add-attribute value="/WEB-INF/views/pages/headers/explorer-header.jsp"/>
+		</put-list-attribute>
+	</definition>
+
+	<definition name="common-header"
+		template="/WEB-INF/views/pages/headers/common-header.jsp"></definition>
 </tiles-definitions>

@@ -1,25 +1,27 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>com.huawei</groupId>
-  <artifactId>hdfs-webui</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
-  <description>hdfs web ui</description>
-  <name>HDFS Web UI</name>
-	
-  <properties>
-  	<spring.version>3.2.5.RELEASE</spring.version>
-  </properties>
-  <dependencies>
-  	<dependency>
-  		<artifactId>junit</artifactId>
-  		<groupId>junit</groupId>
-  		<version>4.11</version>
-  		<scope>test</scope>
-  	</dependency>
-  	
-  	<dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.huawei</groupId>
+	<artifactId>hdfs-webui</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<description>hdfs web ui</description>
+	<name>HDFS Web UI</name>
+
+	<properties>
+		<spring.version>3.2.5.RELEASE</spring.version>
+		<hdfs.version>2.4.0</hdfs.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<artifactId>junit</artifactId>
+			<groupId>junit</groupId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
 			<version>${spring.version}</version>
@@ -127,5 +129,13 @@
 			<version>2.4</version>
 			<classifier>jdk15</classifier>
 		</dependency>
-  </dependencies>
+
+		<!-- apache hdfs -->
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>${hdfs.version}</version>
+		</dependency>
+
+	</dependencies>
 </project>
