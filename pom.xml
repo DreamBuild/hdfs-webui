@@ -133,7 +133,7 @@
 		<!-- apache hdfs -->
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-hdfs</artifactId>
+			<artifactId>hadoop-common</artifactId>
 			<version>${hdfs.version}</version>
 		</dependency>
 

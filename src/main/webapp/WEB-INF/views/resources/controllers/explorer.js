@@ -3,5 +3,6 @@ app.controller('MainCtrl',mainCtrl);
 
 function mainCtrl($scope)
 {
-	$scope.files = [{address:"#",name:"1",size:10},{address:"#",name:"2",size:10},{address:"#",name:"3",size:10}];
+	$scope.paths = [{name:"root",full:"/"},{name:"home",full:"/home"}];
+	$scope.files = [{address:"#",name:"1",size:10,isFolder:true},{address:"#",name:"2",size:10,isFolder:true},{address:"#",name:"3",size:10,isFolder:false}];
 }
